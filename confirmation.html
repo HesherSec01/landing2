@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/welcome.css">
+    <script src="js/coldown.js"></script>
+    
+  </head>
+  <body>
+    <div class="courses-container">
+        <div class="course">
+            <div class="course-preview">
+                <h6>OnePage.</h6>
+                <h2>Maestrias</h2>
+                <a href="https://heshersec01.github.io/landing2/fvinstitute/">Ver más Maestrias</a>
+            </div>
+            <div class="course-info">
+                <h2>Gracias por su suscripción.</h2>
+                <h3>Recibira un email en breve</h3>
+                <p id="countdown"></p>
+                </p> <p>redireccionando...</p>
+    <script>
+      window.onload = updateClock;
+
+      var totalTime = 5;
+
+      function updateClock() {
+        document.getElementById("countdown").innerHTML = totalTime;
+        if (totalTime == 0) {
+        location.href ="https://heshersec01.github.io/landing2/";
+        } else {
+          totalTime -= 1;
+          setTimeout("updateClock()", 1000);
+        }
+      }
+    </script>
+                
+                <button class="btn" onclick="location.href='https://heshersec01.github.io/landing2'" type="button" > Continuar</button>
+            </div>
+        </div>
+    </div>
+        
+    
+    <button class="floating-btn">
+        Get in Touch
+    </button>
+    
+    <footer>
+        <span>Creado por <a href="https://www.fonfoverde.org">FONDOVERDE</a> | © 
+            2020 Todos los derechos reservados.</span>
+    </footer>
+  </body>
+</html>
